@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --blue: hsl(214, 20%, 21%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hidden{
+  display: none;
+}
+
+.card{
+  background-color: var(--dark-blue);
+  border-radius: 1rem;
+  width: 350px;
+}
+
+.card-container{
+  padding: 2rem;
+}
+
+.star_icon{
+  background-color: var(--blue);
+  border-radius: 50%;
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.title{
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.description{
+  font-size: 14px;
+  color: var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+.ratings{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ratings span{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--light-grey);
+}
+
+.ratings span:hover{
+  color: var(--white);
+  background-color: var(--light-grey);
+}
+
+.submit_btn{
+  background-color: var(--orange);
+  color: var(white);
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit_btn:hover{
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thank_section{
+  text-align: center;
+}
+
+.chip{
+  background-color: var(--blue);
+  width: fit-content;
+  margin: 1rem auto;
+  color: var(--orange);
+  font-size: 14px;
+  padding: 0.7rem;
+  border-radius: 2rem;
+}
+
+.checked{
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
+}
+
+@media (max-width: 500px){
+  .card{
+    align-content: center;
+  }
+  .rating_section {
+    display: grid;
+    place-content: center;
+  }
+}
